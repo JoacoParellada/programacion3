@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico HTML</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid;
+            padding: 8px;
+        }
+        thead{
+            background-color: grey;
+        }
+        tfoot{
+            background-color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Practico HTML</h1>
+        <nav>
+            <li><a href="https://github.com/JoacoParellada">Mi GitHub</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section><!-- Divido en secciones segun el ejercicio del practico -->
+            <h2>1.Estructura Basica del Documento HTML</h2>
+            <p>Este documento HTML contiene su estructura basica que incluye la declaracion de DOCTYPE, etiquetas de metadatos y un titulo.</p>
+        </section>
+        <section>
+            <h2>2.Encabezados y Propiedades de Texto</h2>
+            <p style="font-style: italic;">Este es un texto en cursiva</p>
+            <p style="font-weight: bold;">Este es un texto en negrita</p>
+            <p style="text-decoration: underline;">Este es un texto subrayado</p>
+        </section>
+        <section>
+            <h2>3.Divisiones y Agrupacion de contenido</h2>
+            <div>
+                <h3>Seccion 1</h3>
+                <p>Contenido de la primer seccion</p>
+            </div>
+
+            <div>
+                <h3>Seccion 2</h3>
+                <p>Contenido de la segunda seccion</p>
+            </div>
+        </section>
+        <section>
+            <h2>4.Enlaces y Listas</h2>
+
+            <h3>Enlace a pagina externa</h3>
+            <li><a href="https://github.com/JoacoParellada" target="_blank">Mi GitHub</a></li>
+
+            <h3>Enlace a pagina interna</h3>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="documentacion.html">Documentacion</a></li>
+            
+            <h3>Listas</h3>
+            <h4>Lista desordenada:</h4>
+            <ul>
+                <li>Primer elemento de lista desordenada</li>
+                <li>Segundo elemento de lista desordenada</li>
+                <li>Segundo elemento de lista desordenada</li>
+            </ul>
+
+            <h3>Lista ordenada:</h3>
+            <ol>
+                <li>Elemento de lista ordenada</li>
+                <li>Elemento de lista ordenada</li>
+                <li>Elemento de lista ordenada</li>
+            </ol>
+        </section>
+        <section>
+            <h2>5.Multimedia</h2>
+            <h3>Imagenes</h3>
+            <img src="https://imgs.search.brave.com/XorIy43OqBBgvgpxSFUxXOjx1n703jfJPcKb0NW0uig/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dzNzY2hvb2xzLmNv/bS93aGF0aXMvaW1n/X2h0bWwuanBn" alt="Logo de HTML" width="100px">
+
+            <h3>Videos</h3>
+            <video src="multimedia/messi.mp4" controls width="300px"></video>
+
+            <h3>Audios</h3>
+            <audio src="multimedia/audioslave-like-a-stone-.mp3" controls></audio>
+        </section>
+        <section>
+            <h2>6.Tablas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fila 1, Columna 1</td>
+                        <td>Fila 1, Columna 2</td>
+                        <td>Fila 1, Columna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Fila 2, Columna 1</td>
+                        <td>Fila 2, Columna 2</td>
+                        <td>Fila 2, Columna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Fila 3, Columna 1</td>
+                        <td>Fila 3, Columna 2</td>
+                        <td>Fila 3, Columna 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total 1</td>
+                        <td>Total 2</td>
+                        <td>Total 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>7.Formularios</h2>
+            <form>
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@example.com">
+                </div>
+                <div>
+                    <label for="fecha nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" name="fecha nacimiento" id="fecha nacimiento">
+                </div>
+                <div>
+                    <textarea name="comentarios" id="comentarios" placeholder="Deja tu comentario..."></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Este documento fue creado por Joaquin Parellada <br>
+        Todos los Derechos Reservados
+        </p>
+    </footer>
+</body>
+</html>

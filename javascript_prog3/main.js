@@ -186,11 +186,10 @@ btn.addEventListener("click", () => {
 console.log("---EVENTOS EN EL DOM---");
 console.log("---EJERCICIO 1---");
 
-const list = document.getElementById("unorderedList");
 const elements = document.getElementsByTagName("li");
 
 for (let i = 0; i < elements.length; i++) {
-  elements[i].addEventListener("click", function () {
+  elements[i].addEventListener("click", () => {
     console.log(elements[i].textContent);
   });
 }

@@ -1,0 +1,10 @@
+.prf {
+  color: blue;
+}
+.cambiado {
+  background-color: red;
+}
+.deactivated {
+  pointer-events: none;
+  background-color: #afafaf;
+}
